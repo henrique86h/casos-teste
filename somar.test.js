@@ -35,3 +35,7 @@ test('Verificação de entrada inválida', () => {
 test('Soma de grandes números', () => {
     expect(somar(999999999, 999999999)).toBe(1999999998)
 })
+
+test('Soma de dois números inteiros positivos entre aspas', () => {
+    expect(somar("1", "2")).toBe(3)
+})

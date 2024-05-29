@@ -1,9 +1,15 @@
 function somar(a, b) {
-    if ((typeof a != 'number') || (typeof b != 'number')) {
-       return "Os parâmetros devem ser números"
+
+    a = parseFloat(a);
+    b = parseFloat(b);
+
+
+    if ((isFinite(a) == false) || (isFinite(b) == false)) {
+      return "Os parâmetros devem ser números"
+       
     }else{
   
-    return a + b
+      return a + b
   }
 }
   
